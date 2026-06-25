@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
 
 env:
   DOTNET_VERSION: "10.0.x"
@@ -31,4 +31,4 @@ jobs:
         run: dotnet test Swap.slnx --configuration Release --no-build
 
       - name: Publish
-        run: dotnet publish src/API/Swap.Api/Swap.Api.csproj --configuration Release --no-build
+        run: dotnet publish src/Swap.API/Swap.API.csproj --configuration Release --no-build

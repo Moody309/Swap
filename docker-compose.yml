@@ -24,7 +24,7 @@ services:
     ports:
       - 5432:5432
 
-  devhabit.seq:
+  swap.seq:
     image: datalust/seq:2024.3 # or latest
     environment:
       ACCEPT_EULA: "Y"
