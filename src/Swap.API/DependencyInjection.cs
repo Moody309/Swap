@@ -78,6 +78,7 @@ public static class DependencyInjection
             options.IncludeFormattedMessage = true;
         });
         builder.Services.AddScoped<ISmsService, MockSmsService>();
+        builder.Services.AddScoped<IAuthService, AuthService>();
         return builder;
     }
 }

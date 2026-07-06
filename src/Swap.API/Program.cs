@@ -3,9 +3,9 @@ using Swap.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddApiServices()
-       .AddDatabase()
-       .AddObservability();
+builder.AddObservability()
+       .AddApiServices()
+       .AddDatabase();
 
 var app = builder.Build();
 
