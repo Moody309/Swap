@@ -6,6 +6,9 @@
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/Swap.API/Swap.API.csproj" />
+    <Project Path="src/Swap.Application/Swap.Application.csproj" Id="ff57f07b-339f-45d0-92f3-98a9e54f3452" />
+    <Project Path="src/Swap.Domain/Swap.Domain.csproj" Id="bccad5cb-f5e7-46c1-9265-10beb5941412" />
+    <Project Path="src/Swap.Infrastructure/Swap.Infrastructure.csproj" Id="b66948ed-8bf4-4e37-8709-59b1c3843781" />
   </Folder>
   <Project Path="docker-compose.dcproj">
     <Build />

@@ -1,4 +1,4 @@
-﻿namespace Swap.API.Database;
+﻿namespace Swap.Infrastructure.Database;
 
 public static class Schemas
 {

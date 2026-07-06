@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+	  <PackageReference Include="EFCore.NamingConventions" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Swap.Application\Swap.Application.csproj" />
+  </ItemGroup>
+</Project>

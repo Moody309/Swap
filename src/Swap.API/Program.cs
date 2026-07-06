@@ -1,11 +1,11 @@
 using Swap.API;
 using Swap.API.Extensions;
-
+using Swap.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddApiServices()
-       .AddObservability()
-       .AddDatabase();
+builder.AddApiServices().AddObservability();
+
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 

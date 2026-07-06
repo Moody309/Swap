@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Swap.API.Database;
+using Swap.Infrastructure.Database;
 
 namespace Swap.API.Extensions;
 

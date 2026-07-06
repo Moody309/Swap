@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace Swap.API.Authentication;
+namespace Swap.Infrastructure.Authentication;
 /// <summary>
 /// Configures <see cref="JwtBearerOptions"/> by binding values
 /// from the "Authentication" section in the application configuration.
