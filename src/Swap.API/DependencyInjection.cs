@@ -6,6 +6,7 @@ using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Swap.API.Database;
+using Swap.API.Services;
 
 namespace Swap.API;
 
@@ -76,7 +77,7 @@ public static class DependencyInjection
             // Includes the fully formatted log message instead of only template + parameters
             options.IncludeFormattedMessage = true;
         });
-
+        builder.Services.AddScoped<ISmsService, MockSmsService>();
         return builder;
     }
 }

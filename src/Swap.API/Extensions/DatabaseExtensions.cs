@@ -25,7 +25,7 @@ public static class DatabaseExtensions
         try
         {
             // Apply all pending migrations
-            await applicationDbContext.Database.MigrateAsync();
+            //await applicationDbContext.Database.MigrateAsync();
             app.Logger.LogInformation("Application database migrations applied successfully.");
         }
         catch (Exception ex)

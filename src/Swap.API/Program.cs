@@ -4,8 +4,8 @@ using Swap.API.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddApiServices()
-       .AddObservability()
-       .AddDatabase();
+       .AddDatabase()
+       .AddObservability();
 
 var app = builder.Build();
 
@@ -18,9 +18,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 await app.RunAsync();

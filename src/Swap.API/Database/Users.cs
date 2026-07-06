@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Swap.API.Services;
 
 namespace Swap.API.Database;
 
 public class Users
 {
     [Key]
-    public int Id { get; set; }
+    public int Id { get; set; } 
 
     [Required]
     [StringLength(50)] 
