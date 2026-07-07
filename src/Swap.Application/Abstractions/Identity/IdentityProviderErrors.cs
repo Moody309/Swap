@@ -10,4 +10,8 @@ public static class IdentityProviderErrors
     public static readonly Error EmailIsNotUnique = Error.Conflict(
         code: "EmailIsNotUnique",
         description: "The provided email is not unique.");
+
+    public static readonly Error InvalidCredentials = Error.Failure(
+    code: "InvalidCredentials",
+    description: "The provided email or password is incorrect.");
 }

@@ -40,6 +40,11 @@ public static class DependencyInjection
             // Add the authentication handler to outgoing requests.
             .AddHttpMessageHandler<KeyCloakAuthDelegatingHandler>();
 
+        // Configure the HTTP client used to hit Keycloak's token endpoint for login.
+        // No auth handler here — the user's own credentials are the authentication.
+        services.AddHttpClient<KeyCloakClient>();
+
+
         // Register the service responsible for identity provider operations.
         services.AddTransient<IIdentityProviderService, IdentityProviderService>();
 
